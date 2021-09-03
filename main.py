@@ -26,7 +26,6 @@ while True:
                 length, info, img = detector.findDistance(hands[0]["center"], hands[1]["center"], img)
                 startDist = length
 
-            #length, info, img = detector.findDistance(lmList1[8], lmList2[8], img)
             length, info, img = detector.findDistance(hands[0]["center"], hands[1]["center"], img)
             scale = int((length - startDist) // 2)
             cx, cy = info[4:]
